@@ -86,7 +86,7 @@
         app:layout_constraintVertical_bias="0.835" />
 
     <Button
-        android:id="@+id/background"
+        android:id="@+id/btnToggleDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/change_background"
