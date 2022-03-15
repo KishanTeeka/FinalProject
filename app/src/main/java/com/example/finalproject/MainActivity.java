@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnToggleDark;
-
+    private Button graphingCalculatorID;
+    private Button scientificCalculatorID;
+    private Button conversionCalculatorID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         btnToggleDark
                 = findViewById(R.id.btnToggleDark);
 
+        graphingCalculatorID = findViewById(R.id.graphingCalculatorID);
+        scientificCalculatorID = findViewById(R.id.scientificCalculatorID);
+        conversionCalculatorID = findViewById(R.id.conversionCalculatorID);
         // Saving state of our app
         // using SharedPreferences
         SharedPreferences sharedPreferences
@@ -32,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 = sharedPreferences
                 .getBoolean(
                         "isDarkModeOn", false);
+        btnToggleDark.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+        graphingCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+        scientificCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+        conversionCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
 
         // When user reopens the app
         // after applying dark/light mode
@@ -48,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     .setDefaultNightMode(
                             AppCompatDelegate
                                     .MODE_NIGHT_NO);
+
             btnToggleDark
                     .setText(
                             "Change Color");
@@ -70,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
                                     .setDefaultNightMode(
                                             AppCompatDelegate
                                                     .MODE_NIGHT_NO);
+                            btnToggleDark.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+                            graphingCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+                            scientificCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+                            conversionCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+
                             // it will set isDarkModeOn
                             // boolean to false
                             editor.putBoolean(
@@ -88,6 +104,10 @@ public class MainActivity extends AppCompatActivity {
                                     .setDefaultNightMode(
                                             AppCompatDelegate
                                                     .MODE_NIGHT_YES);
+                            btnToggleDark.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+                            graphingCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+                            scientificCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
+                            conversionCalculatorID.getResources().getDrawable(R.drawable.gradient_drawable_lightmode);
 
                             // it will set isDarkModeOn
                             // boolean to true
@@ -102,4 +122,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
+    // onCreate ends here
+
+    public void onClick(View v) {
+        startActivity(new Intent(MainActivity.this, ConversionHome.class));
+    }
+//    public void gotoConversionHome(View v) {
+//        Intent intent = new Intent(MainActivity.this, ConversionHome.class);
+//        startActivity(intent);
+//    }
 }
