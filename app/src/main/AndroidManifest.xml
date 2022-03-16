@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
         <activity
-            android:name=".conversionHomePage"
+            android:name=".tempConvertor"
+            android:exported="false" />
+        <activity
+            android:name=".weightConvertor"
+            android:exported="false" />
+        <activity
+            android:name=".volumeConvertor"
+            android:exported="false" />
+        <activity
+            android:name=".lengthConvertor"
+            android:exported="false" />
+        <activity
+            android:name=".conversionHome"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

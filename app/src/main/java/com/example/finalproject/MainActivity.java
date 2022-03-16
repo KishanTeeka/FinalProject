@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // onCreate ends here
 
-    public void onClick(View v) {
+    public void conversionPage(View v) {
         Intent MoveConversionHome = new Intent(this, conversionHome.class);
         startActivity(MoveConversionHome);
     }
