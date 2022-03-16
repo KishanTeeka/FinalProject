@@ -78,7 +78,7 @@
         android:id="@+id/conversionCalculatorID"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:onClick="gotoConversionHome"
+        android:onClick="onClick"
         android:text="@string/conversion_calculator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
