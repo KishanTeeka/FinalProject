@@ -52,6 +52,7 @@
     <Button
         android:id="@+id/scientificCalculatorID"
         android:layout_width="200dp"
+        android:onClick="scientificPage"
         android:layout_height="wrap_content"
         android:text="@string/scientific_calculator"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,6 +67,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/graphing_calculator"
+        android:onClick="graphingPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

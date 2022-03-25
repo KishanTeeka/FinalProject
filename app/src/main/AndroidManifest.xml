@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
         <activity
+            android:name=".graphingCalculator"
+            android:exported="false" />
+        <activity
             android:name=".scientificCalculator"
             android:exported="false" />
         <activity

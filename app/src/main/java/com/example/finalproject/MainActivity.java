@@ -128,6 +128,16 @@ public class MainActivity extends AppCompatActivity {
         Intent MoveConversionHome = new Intent(this, conversionHome.class);
         startActivity(MoveConversionHome);
     }
+
+    public void scientificPage(View v) {
+        Intent MoveScientificHome = new Intent(this, scientificCalculator.class);
+        startActivity(MoveScientificHome);
+    }
+
+    public void graphingPage(View v) {
+        Intent MoveGraphingHome = new Intent(this, graphingCalculator.class);
+        startActivity(MoveGraphingHome);
+    }
 //    public void gotoConversionHome(View v) {
 //        Intent intent = new Intent(MainActivity.this, ConversionHome.class);
 //        startActivity(intent);
