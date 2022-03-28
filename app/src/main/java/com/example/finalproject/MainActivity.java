@@ -138,8 +138,4 @@ public class MainActivity extends AppCompatActivity {
         Intent MoveGraphingHome = new Intent(this, graphingCalculator.class);
         startActivity(MoveGraphingHome);
     }
-//    public void gotoConversionHome(View v) {
-//        Intent intent = new Intent(MainActivity.this, ConversionHome.class);
-//        startActivity(intent);
-//    }
 }
