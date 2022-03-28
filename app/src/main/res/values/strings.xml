@@ -5,7 +5,21 @@
     <string name="scientific_calculator">Scientific Calculator</string>
     <string name="conversion_calculator">Conversion Calculator</string>
     <string name="graphing_calculator">Graphing Calculator</string>
-    <string name="todo">TODO</string>
     <string name="calculator_icon">calculator icon</string>
     <string name="change_background">Change Background</string>
+    <string name="todo">TODO</string>
+    <string name="modulus">%</string>
+    <string name="sin">sin</string>
+    <string name="enter">enter</string>
+    <string name="exponent">^</string>
+    <string name="subtract">-</string>
+    <string name="multiply">x</string>
+    <string name="divide">/</string>
+    <string name="ce">CE</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="add">+</string>
+    <string name="degree">Degree</string>
+    <string name="radian">Radian</string>
+    <string name="pi">π</string>
 </resources>
