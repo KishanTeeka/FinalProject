@@ -88,6 +88,7 @@
         android:id="@+id/sine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onSinClick"
         android:text="@string/sin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -186,6 +187,7 @@
         android:id="@+id/cosine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onCosClick"
         android:text="@string/cos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -198,6 +200,7 @@
         android:id="@+id/tangent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onTanClick"
         android:text="@string/tan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -289,7 +292,7 @@
         app:layout_constraintVertical_bias="0.415" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/result"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:gravity="center"
