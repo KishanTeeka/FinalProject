@@ -88,7 +88,7 @@
         android:id="@+id/sine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onSinClick"
+        android:onClick="sinClick"
         android:text="@string/sin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,7 +160,7 @@
     <Switch
         android:id="@+id/switch1"
         android:layout_width="100dp"
-        android:layout_height="25dp"
+        android:layout_height="48dp"
         android:text=""
         android:textSize="15sp"
         android:textStyle="bold"
@@ -169,7 +169,7 @@
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
+        app:layout_constraintVertical_bias="0.971" />
 
     <Button
         android:id="@+id/clear"
@@ -187,7 +187,7 @@
         android:id="@+id/cosine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onCosClick"
+        android:onClick="cosClick"
         android:text="@string/cos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -200,7 +200,7 @@
         android:id="@+id/tangent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onTanClick"
+        android:onClick="tanClick"
         android:text="@string/tan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -234,7 +234,7 @@
         app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.956" />
 
     <TextView
         android:id="@+id/textView5"
@@ -249,7 +249,7 @@
         app:layout_constraintHorizontal_bias="0.364"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.956" />
 
     <Button
         android:id="@+id/pi"
@@ -268,6 +268,7 @@
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:background="@drawable/homeicon"
+        android:contentDescription="@string/app_name"
         android:onClick="homePage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

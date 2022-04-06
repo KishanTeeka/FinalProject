@@ -7,17 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
-import android.widget.TextView;
 
 public class scientificCalculator extends AppCompatActivity {
 
-
-    TextView result = (EditText) findViewById(R.id.result);
-    Switch conversionSwitch = (Switch) findViewById(R.id.switch1);
-    Boolean switchState = conversionSwitch.isChecked();
-    Button enterButton = (Button)findViewById(R.id.enter);
-
-    EditText radians1 = (EditText) findViewById(R.id.scientificInput1);
+    private EditText result, radians1;
+    private Switch conversionSwitch;
+    private Boolean switchState;
+    private Button enterButton;
     double newRadians1;
 
     double toRadians;
@@ -26,14 +22,19 @@ public class scientificCalculator extends AppCompatActivity {
     String finalAnswer;
     double answer;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scientific_calculator);
+
+        result = (EditText) findViewById(R.id.result);
+        conversionSwitch = (Switch) findViewById(R.id.switch1);
+        switchState = conversionSwitch.isChecked();
+        enterButton = (Button)findViewById(R.id.enter);
+        radians1 = (EditText) findViewById(R.id.scientificInput1);
     }
 
-    public void onSinClick(View v)
+    public String sinClick(View v)
     {
         // solveScientific();
         newRadians1 = Double.parseDouble(radians1.getText().toString());
@@ -43,34 +44,37 @@ public class scientificCalculator extends AppCompatActivity {
         if(!switchState) { // radian format
             answer = Math.sin(toRadians);
         }
-        else {
+        else if (switchState){
             answer = Math.sin(toDegree);
         }
         finalAnswer = Double.toString(answer);
         result.setText(finalAnswer);
+        return finalAnswer;
         // need to change later to match the format
     }
 
-    public void onCosClick(View v)
+    public String cosClick(View v)
     {
         // solveScientific();
+        newRadians1 = Double.parseDouble(radians1.getText().toString());
         toRadians = Math.toRadians(newRadians1);
         toDegree = Math.toDegrees(newRadians1);
-        newRadians1 = Double.parseDouble(radians1.getText().toString());
+
 
         if(!switchState) { // radian format
              // need to change later to match the format
 
             answer = Math.cos(toRadians);
         }
-        else {
+        else if (switchState){
             answer = Math.cos(toDegree);
         }
         finalAnswer = Double.toString(answer);
         result.setText(finalAnswer);
+        return finalAnswer;
     }
 
-    public void onTanClick(View v)
+    public String tanClick(View v)
     {
         // solveScientific();
         toRadians = Math.toRadians(newRadians1);
@@ -81,11 +85,12 @@ public class scientificCalculator extends AppCompatActivity {
             answer = Math.tan(toRadians);
 
         }
-        else {
+        else if (switchState) {
             answer = Math.tan(toDegree);
         }
         finalAnswer = Double.toString(answer);
         result.setText(finalAnswer);
+        return finalAnswer;
     }
 
     public void homePage(View v){
