@@ -291,17 +291,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.415" />
 
-    <TextView
+    <EditText
         android:id="@+id/result"
-        android:layout_width="100dp"
+        android:layout_width="115dp"
         android:layout_height="50dp"
+        android:ems="10"
         android:gravity="center"
         android:hint="Result"
+        android:inputType="textPersonName"
         android:text=""
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.417" />
