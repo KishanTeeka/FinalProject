@@ -12,15 +12,17 @@ public class scientificCalculator extends AppCompatActivity {
 
     private EditText result, radians1;
     private Switch conversionSwitch;
-    private Boolean switchState;
+    private Boolean switchState = false;
     private Button enterButton;
     double newRadians1;
-
+    double degrees;
+    double radians;
     double toRadians;
     double toDegree;
 
     String finalAnswer;
     double answer;
+    double newAnswer1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,67 +31,78 @@ public class scientificCalculator extends AppCompatActivity {
 
         result = (EditText) findViewById(R.id.result);
         conversionSwitch = (Switch) findViewById(R.id.switch1);
-        switchState = conversionSwitch.isChecked();
         enterButton = (Button)findViewById(R.id.enter);
         radians1 = (EditText) findViewById(R.id.scientificInput1);
+        conversionSwitch.setChecked(false);
     }
 
     public String sinClick(View v)
     {
         // solveScientific();
         newRadians1 = Double.parseDouble(radians1.getText().toString());
-        toRadians = Math.toRadians(newRadians1);
-        toDegree = Math.toDegrees(newRadians1);
+        switchState = conversionSwitch.isChecked();
+//        degrees = Math.PI / (180 * newRadians1); // radians (doesn't work)
 
-        if(!switchState) { // radian format
-            answer = Math.sin(toRadians);
+        degrees = 0.01745329251 * newRadians1;
+        radians = (180 / Math.PI) * newRadians1; // degrees
+//        toRadians = newRadians1 * Math.PI / 180;
+
+        if(switchState == false) { // radian format
+            answer = Math.sin(radians);
+            finalAnswer = Double.toString(answer);
+            result.setText(finalAnswer);
         }
-        else if (switchState){
-            answer = Math.sin(toDegree);
+        else{
+            answer = Math.sin(degrees);
+            finalAnswer = Double.toString(answer);
+            result.setText(finalAnswer);
         }
-        finalAnswer = Double.toString(answer);
-        result.setText(finalAnswer);
         return finalAnswer;
-        // need to change later to match the format
     }
 
     public String cosClick(View v)
     {
         // solveScientific();
         newRadians1 = Double.parseDouble(radians1.getText().toString());
+        switchState = conversionSwitch.isChecked();
         toRadians = Math.toRadians(newRadians1);
         toDegree = Math.toDegrees(newRadians1);
-
+//        toRadians = newRadians1 * 180 / Math.PI;
+//        toDegree = newRadians1 * Math.PI / 180;
 
         if(!switchState) { // radian format
              // need to change later to match the format
 
-            answer = Math.cos(toRadians);
-        }
-        else if (switchState){
             answer = Math.cos(toDegree);
+        }
+        else{
+            answer = Math.cos(toRadians);
         }
         finalAnswer = Double.toString(answer);
         result.setText(finalAnswer);
+
         return finalAnswer;
     }
 
     public String tanClick(View v)
     {
         // solveScientific();
-        toRadians = Math.toRadians(newRadians1);
-        toDegree = Math.toDegrees(newRadians1);
+        // toRadians = Math.toRadians(newRadians1);
         newRadians1 = Double.parseDouble(radians1.getText().toString());
+        toDegree = Math.toDegrees(newRadians1);
+        toRadians = newRadians1 * Math.PI / 180;
 
         if(!switchState) { // radian format
-            answer = Math.tan(toRadians);
+            answer = Math.tan(toDegree);
+            finalAnswer = Double.toString(answer);
+            result.setText(finalAnswer);
 
         }
-        else if (switchState) {
-            answer = Math.tan(toDegree);
+        else{
+            answer = Math.tan(toRadians);
+            finalAnswer = Double.toString(answer);
+            result.setText(finalAnswer);
         }
-        finalAnswer = Double.toString(answer);
-        result.setText(finalAnswer);
         return finalAnswer;
     }
 
