@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinalProject</string>
+    <string name="app_name">Enhanced Calculator App</string>
     <string name="enhanced_calculator_app">Enhanced Calculator App</string>
     <string name="select_the_calculator_you_would_like_to_use">Select the calculator you would like to use.</string>
     <string name="scientific_calculator">Scientific Calculator</string>
