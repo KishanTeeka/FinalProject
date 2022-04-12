@@ -22,6 +22,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05" />
 
+
+
     <Button
         android:id="@+id/home"
         android:layout_width="75dp"
@@ -63,6 +65,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.839" />
 
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:entries="@array/length_arrays"
+        android:prompt="@string/length_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="153dp"
@@ -73,6 +88,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.168"
         app:srcCompat="@drawable/rulericon" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

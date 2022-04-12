@@ -22,4 +22,17 @@
     <string name="degree">Degree</string>
     <string name="radian">Radian</string>
     <string name="pi">π</string>
+
+        <string name="length_prompt">Choose a unit of measure</string>
+
+        <string-array name="length_arrays">
+            <item>meters</item>
+            <item>mm States</item>
+            <item>cm</item>
+            <item>km</item>
+            <item>miles</item>
+            <item>feet</item>
+            <item>inches</item>
+        </string-array>
+
 </resources>

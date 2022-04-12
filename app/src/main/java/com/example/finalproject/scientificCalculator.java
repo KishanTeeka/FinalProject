@@ -17,13 +17,9 @@ public class scientificCalculator extends AppCompatActivity {
     double newRadians1;
     double degrees;
     double radians;
-    double toRadians;
-    double toDegree;
 
-    double roundOff;
     String finalAnswer;
     double answer;
-    double newAnswer1;
     double previousAnswer;
 
     @Override
@@ -152,23 +148,16 @@ public class scientificCalculator extends AppCompatActivity {
     }
     public String sinClick(View v)
     {
-        // solveScientific();
         newRadians1 = Double.parseDouble(radians1.getText().toString());
         switchState = conversionSwitch.isChecked();
-//        degrees = Math.PI / (180 * newRadians1); // radians (doesn't work)
-
-//        degrees = 0.01745329251 * newRadians1;
-//        degrees = radians / 57.2958;
-//        radians = (Math.PI / 180) * degrees; // doesnt work
-//        degrees = (180 / Math.PI) * newRadians1;
 
         double variable = (180 / Math.PI) * newRadians1; // degrees
-        radians = (Math.PI / 180) * variable; // this works but it should be for radians
+        radians = (Math.PI / 180) * variable;
         degrees = 0.01745329251 * newRadians1;
-//        toRadians = newRadians1 * Math.PI / 180;
 
         if(switchState == false) { // radian format
             answer = Math.sin(radians);
+
             if(answer == -0) {
                 answer = 0;
                 finalAnswer = String.format("%.6f", answer);
@@ -192,17 +181,13 @@ public class scientificCalculator extends AppCompatActivity {
 
     public String cosClick(View v)
     {
-        // solveScientific();
-        double variable = (180 / Math.PI) * newRadians1; // degrees
-        radians = (Math.PI / 180) * variable; // this works but it should be for radians
+        double variable = (180 / Math.PI) * newRadians1;
+        radians = (Math.PI / 180) * variable;
         degrees = 0.01745329251 * newRadians1;
-//        toRadians = newRadians1 * 180 / Math.PI;
-//        toDegree = newRadians1 * Math.PI / 180;
 
         if(switchState == false) { // radian format
-             // need to change later to match the format
-
             answer = Math.cos(radians);
+
             if(answer == -0) {
                 answer = 0;
                 finalAnswer = String.format("%.6f", answer);
@@ -226,14 +211,13 @@ public class scientificCalculator extends AppCompatActivity {
 
     public String tanClick(View v)
     {
-        // solveScientific();
-        // toRadians = Math.toRadians(newRadians1);
         double variable = (180 / Math.PI) * newRadians1; // degrees
-        radians = (Math.PI / 180) * variable; // this works but it should be for radians
+        radians = (Math.PI / 180) * variable;
         degrees = 0.01745329251 * newRadians1;
 
         if(!switchState) { // radian format
             answer = Math.tan(radians);
+
             if(answer == -0) {
                 answer = 0;
                 finalAnswer = String.format("%.6f", answer);
