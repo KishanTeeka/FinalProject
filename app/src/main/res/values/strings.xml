@@ -26,13 +26,13 @@
         <string name="length_prompt">Choose a unit of measure</string>
 
         <string-array name="length_arrays">
-            <item>meters</item>
-            <item>mm States</item>
+            <item>mm</item>
             <item>cm</item>
+            <item>m</item>
             <item>km</item>
-            <item>miles</item>
-            <item>feet</item>
-            <item>inches</item>
+            <item>in</item>
+            <item>ft</item>
+            <item>mi</item>
         </string-array>
 
 </resources>

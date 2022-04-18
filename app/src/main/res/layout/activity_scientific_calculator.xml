@@ -69,6 +69,7 @@
         android:id="@+id/scientificInput1"
         android:layout_width="115dp"
         android:layout_height="50dp"
+
         android:autofillHints="Enter Number"
         android:ems="10"
         android:textSize="18sp"
