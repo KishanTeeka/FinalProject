@@ -38,13 +38,13 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/input"
+        android:id="@+id/inputET"
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="number"
-        android:text="Input"
+        android:hint="Input"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -53,10 +53,10 @@
         app:layout_constraintVertical_bias="0.46" />
 
     <EditText
-        android:id="@+id/outputresult"
+        android:id="@+id/outputET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Output"
+        android:hint="Output"
         android:focusable="false"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,7 +94,7 @@
         android:id="@+id/spinner2"
         android:layout_width="125dp"
         android:layout_height="25dp"
-        android:entries="@array/length_arrays"
+        android:entries="@array/length_arrays2"
         android:prompt="@string/length_prompt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,8 +107,8 @@
         android:id="@+id/convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="convert"
         android:onClick="convert"
+        android:text="convert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

@@ -5,20 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import java.util.ArrayList;
-import java.util.List;
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 
 public class lengthConvertor extends AppCompatActivity {
@@ -28,32 +18,85 @@ public class lengthConvertor extends AppCompatActivity {
     private Spinner inputUnit, outputUnit;
     private double input, output,result;
     private EditText outputResult, inputNumber;
-    private String finalAnswer;
+    private String finalAnswer, inputText, outputText, compareValue, compareValue2;
+    private ArrayAdapter<CharSequence> adapter, adapter2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_length_convertor);
+
+        outputResult = (EditText) findViewById(R.id.outputET);
+        inputNumber = (EditText) findViewById(R.id.inputET);
+        // input = Double.parseDouble(inputNumber.toString());
+
+        inputUnit = (Spinner) findViewById(R.id.spinner1);
+        outputUnit = (Spinner) findViewById(R.id.spinner2);
     }
 
-    public void convert(View v) {
-        inputUnit = findViewById(R.id.spinner1);
-        outputUnit = findViewById(R.id.spinner2);
+    public int convert(View v) {
 
-        inputNumber = (EditText) findViewById(R.id.input);
-        outputResult = (EditText) findViewById(R.id.outputresult);
-        double input = Double.parseDouble(inputNumber.toString());
+        input = Double.parseDouble(inputNumber.toString());
+        compareValue = "mm";
+        adapter = ArrayAdapter.createFromResource(this, R.array.length_arrays, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        inputUnit.setAdapter(adapter);
 
-        String inputText = inputUnit.getSelectedItem().toString();
-        String outputText = outputUnit.getSelectedItem().toString();
+        //int spinnerPosition1 = adapter.getPosition(compareValue);
 
-        if(inputText.equals("mm")){
-           if(outputText.equals("cm")) {
-               result = input * 10;
-               finalAnswer = String.format("%.3f", result);
-               outputResult.setText(finalAnswer);
-           }
+        compareValue2 = "cm";
+        adapter2 = ArrayAdapter.createFromResource(this, R.array.length_arrays2, android.R.layout.simple_spinner_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        outputUnit.setAdapter(adapter2);
+
+        //int spinnerPosition2 = adapter2.getPosition(compareValue2);
+
+        int spinnerPosition1 = adapter.getPosition(compareValue);
+        int spinnerPosition2 = adapter.getPosition(compareValue2);
+
+        if (compareValue != null) {
+            inputUnit.setSelection(spinnerPosition1);
+
         }
+        else if (compareValue2 != null) {
+            outputUnit.setSelection(spinnerPosition2);
+        }
+        if(spinnerPosition1 == 0) {
+            if(spinnerPosition2 == 1) {
+                result = input * 10;
+                finalAnswer = String.format("%.3f", result);
+                outputResult.setText(finalAnswer);
+            }
+        }
+
+//        inputUnit = findViewById(R.id.spinner1);
+//        outputUnit = findViewById(R.id.spinner2);
+
+
+//        ArrayAdapter<String> spinnerCountShoesArrayAdapter = new ArrayAdapter<String>(
+//                this,
+//                android.R.layout.simple_spinner_dropdown_item,
+//                getResources().getStringArray(R.array.length_arrays));
+//        inputUnit.setAdapter(spinnerCountShoesArrayAdapter);
+//
+//
+//        ArrayAdapter<String> spinnerCountShoesArrayAdapter2 = new ArrayAdapter<String>(
+//                this,
+//                android.R.layout.simple_spinner_dropdown_item,
+//                getResources().getStringArray(R.array.length_arrays));
+//        inputUnit.setAdapter(spinnerCountShoesArrayAdapter2);
+
+//        inputNumber = (EditText) findViewById(R.id.input);
+//        outputResult = (EditText) findViewById(R.id.outputresult);
+//        double input = Double.parseDouble(inputNumber.toString());
+
+//        inputUnit.setSelection(((ArrayAdapter<String>)inputUnit.getAdapter()).getPosition());
+//         inputText = inputUnit.getSelectedItem().toString();
+//         outputText = outputUnit.getSelectedItem().toString();
+
+
+
+
 //        else if(inputText == "mm" && outputText == "mm"){
 //            result = input * 1000;
 //            finalAnswer = String.format("%.3f", result);
@@ -79,6 +122,7 @@ public class lengthConvertor extends AppCompatActivity {
 //            finalAnswer = String.format("%.3f", result);
 //            outputResult.setText(finalAnswer);
 //        }
+        return spinnerPosition1;
     }
 
     public void homePage(View v){
