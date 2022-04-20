@@ -16,7 +16,7 @@ public class lengthConvertor extends AppCompatActivity {
     private Spinner spinner1, spinner2;
     private Button btnSubmit;
     private Spinner inputUnit, outputUnit;
-    private double input, output,result;
+    private double input, output;
     private EditText outputResult, inputNumber;
     private String finalAnswer, inputText, outputText, compareValue, compareValue2;
     private ArrayAdapter<CharSequence> adapter, adapter2;
@@ -34,7 +34,7 @@ public class lengthConvertor extends AppCompatActivity {
         outputUnit = (Spinner) findViewById(R.id.spinner2);
     }
 
-    public int convert(View v) {
+    public String convert(View v) {
 
         input = Double.parseDouble(inputNumber.toString());
         compareValue = "mm";
@@ -54,20 +54,19 @@ public class lengthConvertor extends AppCompatActivity {
         int spinnerPosition1 = adapter.getPosition(compareValue);
         int spinnerPosition2 = adapter.getPosition(compareValue2);
 
-        if (compareValue != null) {
+        if (compareValue != null && compareValue2 != null) {
             inputUnit.setSelection(spinnerPosition1);
-
-        }
-        else if (compareValue2 != null) {
             outputUnit.setSelection(spinnerPosition2);
-        }
-        if(spinnerPosition1 == 0) {
-            if(spinnerPosition2 == 1) {
-                result = input * 10;
-                finalAnswer = String.format("%.3f", result);
-                outputResult.setText(finalAnswer);
+
+            if(spinnerPosition1 == 0) {
+                if(spinnerPosition2 == 1) {
+                    double result = input *= 10;
+                    finalAnswer = String.format("%.3f", result);
+                    outputResult.setText(finalAnswer);
+                }
             }
         }
+
 
 //        inputUnit = findViewById(R.id.spinner1);
 //        outputUnit = findViewById(R.id.spinner2);
@@ -122,7 +121,7 @@ public class lengthConvertor extends AppCompatActivity {
 //            finalAnswer = String.format("%.3f", result);
 //            outputResult.setText(finalAnswer);
 //        }
-        return spinnerPosition1;
+        return finalAnswer;
     }
 
     public void homePage(View v){
