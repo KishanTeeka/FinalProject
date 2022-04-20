@@ -38,7 +38,15 @@ public class lengthConvertor extends AppCompatActivity {
 
         inputText = inputUnit.getSelectedItem().toString();
         outputText = outputUnit.getSelectedItem().toString();
-        if(inputText.equals("mm") && outputText.equals("cm")){
+        if(inputText.equals("mm") && outputText.equals("mm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("mm") && outputText.equals("cm")){
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 10;
@@ -46,29 +54,289 @@ public class lengthConvertor extends AppCompatActivity {
             outputResult.setText(outputString);
         }
 
+        else if(inputText.equals("mm") && outputText.equals("m")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 1000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
 
-    }
+        else if(inputText.equals("mm") && outputText.equals("km")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 1000000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("mm") && outputText.equals("in")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 25.4;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("mm") && outputText.equals("ft")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 304.8;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("mm") && outputText.equals("mi")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 1609000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+
+        // mm done
+
+
+        else if(inputText.equals("cm") && outputText.equals("mm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 10;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("cm") && outputText.equals("cm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("cm") && outputText.equals("m")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 100;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("cm") && outputText.equals("km")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 10000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("cm") && outputText.equals("in")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 2.54;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("cm") && outputText.equals("ft")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 30.48;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("cm") && outputText.equals("mi")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 160900;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+
+        // cm done
+
+
+        else if(inputText.equals("m") && outputText.equals("mm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 1000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("m") && outputText.equals("cm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 100;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("m") && outputText.equals("m")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("m") && outputText.equals("km")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 1000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("m") && outputText.equals("in")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 39.37;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("m") && outputText.equals("ft")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 3.281;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("m") && outputText.equals("mi")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 1609;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+
+        // m done
+
+
+        else if(inputText.equals("km") && outputText.equals("mm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 1000000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("km") && outputText.equals("cm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 100000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("km") && outputText.equals("m")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 1000;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("km") && outputText.equals("km")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("km") && outputText.equals("in")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 39370;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("km") && outputText.equals("ft")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input * 3280.84;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("km") && outputText.equals("mi")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 1.609;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+
+        // km done
+
+
+        else if(inputText.equals("in") && outputText.equals("in")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("in") && outputText.equals("ft")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 12;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+        else if(inputText.equals("in") && outputText.equals("mi")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 63360;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
+        }
+
+//        else if(inputText.equals("in") && outputText.equals("mm")){
+//            String inputT = inputNumber.getText().toString();
+//            input = Double.parseDouble(inputT);
+//            output = input;
+//            String outputString = new Double(output).toString();
+//            outputResult.setText(outputString);
+//        }
+//
+//        else if(inputText.equals("in") && outputText.equals("cm")){
+//            String inputT = inputNumber.getText().toString();
+//            input = Double.parseDouble(inputT);
+//            output = input * 39370;
+//            String outputString = new Double(output).toString();
+//            outputResult.setText(outputString);
+//        }
+//
+//        else if(inputText.equals("in") && outputText.equals("m")){
+//            String inputT = inputNumber.getText().toString();
+//            input = Double.parseDouble(inputT);
+//            output = input * 3280.84;
+//            String outputString = new Double(output).toString();
+//            outputResult.setText(outputString);
+//        }
+//
+//        else if(inputText.equals("in") && outputText.equals("km")){
+//            String inputT = inputNumber.getText().toString();
+//            input = Double.parseDouble(inputT);
+//            output = input / 1.609;
+//            String outputString = new Double(output).toString();
+//            outputResult.setText(outputString);
+//        }
+        }
 
     public void homePage(View v){
         Intent homePage = new Intent(this, conversionHome.class);
         startActivity(homePage);
     }
-
-//    @Override
-//    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-//
-//        switch (position) {
-//            case 0:
-//                // Whatever you want to happen when the first item gets selected
-//                break;
-//            case 1:
-//                // Whatever you want to happen when the second item gets selected
-//                break;
-//            case 2:
-//                // Whatever you want to happen when the thrid item gets selected
-//                break;
-//
-//        }
-//    }
-
 }
