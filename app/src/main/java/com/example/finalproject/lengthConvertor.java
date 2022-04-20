@@ -34,94 +34,19 @@ public class lengthConvertor extends AppCompatActivity {
         outputUnit = (Spinner) findViewById(R.id.spinner2);
     }
 
-    public String convert(View v) {
+    public void convert(View v) {
 
-        input = Double.parseDouble(inputNumber.toString());
-        compareValue = "mm";
-        adapter = ArrayAdapter.createFromResource(this, R.array.length_arrays, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        inputUnit.setAdapter(adapter);
-
-        //int spinnerPosition1 = adapter.getPosition(compareValue);
-
-        compareValue2 = "cm";
-        adapter2 = ArrayAdapter.createFromResource(this, R.array.length_arrays2, android.R.layout.simple_spinner_item);
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        outputUnit.setAdapter(adapter2);
-
-        //int spinnerPosition2 = adapter2.getPosition(compareValue2);
-
-        int spinnerPosition1 = adapter.getPosition(compareValue);
-        int spinnerPosition2 = adapter.getPosition(compareValue2);
-
-        if (compareValue != null && compareValue2 != null) {
-            inputUnit.setSelection(spinnerPosition1);
-            outputUnit.setSelection(spinnerPosition2);
-
-            if(spinnerPosition1 == 0) {
-                if(spinnerPosition2 == 1) {
-                    double result = input *= 10;
-                    finalAnswer = String.format("%.3f", result);
-                    outputResult.setText(finalAnswer);
-                }
-            }
+        inputText = inputUnit.getSelectedItem().toString();
+        outputText = outputUnit.getSelectedItem().toString();
+        if(inputText.equals("mm") && outputText.equals("cm")){
+            String inputT = inputNumber.getText().toString();
+            input = Double.parseDouble(inputT);
+            output = input / 10;
+            String outputString = new Double(output).toString();
+            outputResult.setText(outputString);
         }
 
 
-//        inputUnit = findViewById(R.id.spinner1);
-//        outputUnit = findViewById(R.id.spinner2);
-
-
-//        ArrayAdapter<String> spinnerCountShoesArrayAdapter = new ArrayAdapter<String>(
-//                this,
-//                android.R.layout.simple_spinner_dropdown_item,
-//                getResources().getStringArray(R.array.length_arrays));
-//        inputUnit.setAdapter(spinnerCountShoesArrayAdapter);
-//
-//
-//        ArrayAdapter<String> spinnerCountShoesArrayAdapter2 = new ArrayAdapter<String>(
-//                this,
-//                android.R.layout.simple_spinner_dropdown_item,
-//                getResources().getStringArray(R.array.length_arrays));
-//        inputUnit.setAdapter(spinnerCountShoesArrayAdapter2);
-
-//        inputNumber = (EditText) findViewById(R.id.input);
-//        outputResult = (EditText) findViewById(R.id.outputresult);
-//        double input = Double.parseDouble(inputNumber.toString());
-
-//        inputUnit.setSelection(((ArrayAdapter<String>)inputUnit.getAdapter()).getPosition());
-//         inputText = inputUnit.getSelectedItem().toString();
-//         outputText = outputUnit.getSelectedItem().toString();
-
-
-
-
-//        else if(inputText == "mm" && outputText == "mm"){
-//            result = input * 1000;
-//            finalAnswer = String.format("%.3f", result);
-//            outputResult.setText(finalAnswer);
-//        }
-//        else if(inputText == "mm" && outputText == "km"){
-//            result = input * 1000000;
-//            finalAnswer = String.format("%.3f", result);
-//            outputResult.setText(finalAnswer);
-//        }
-//        else if(inputText == "mm" && outputText == "in"){
-//            result = input / 25.4;
-//            finalAnswer = String.format("%.3f", result);
-//            outputResult.setText(finalAnswer);
-//        }
-//        else if(inputText == "mm" && outputText == "ft"){
-//            result = input / 305;
-//            finalAnswer = String.format("%.3f", result);
-//            outputResult.setText(finalAnswer);
-//        }
-//        else if(inputText == "mm" && outputText == "mi"){
-//            result = input / 1852000;
-//            finalAnswer = String.format("%.3f", result);
-//            outputResult.setText(finalAnswer);
-//        }
-        return finalAnswer;
     }
 
     public void homePage(View v){
