@@ -17,7 +17,7 @@ public class lengthConvertor extends AppCompatActivity {
     private Spinner inputUnit, outputUnit;
     private double input, output;
     private EditText outputResult, inputNumber;
-    private String inputText, outputText;
+    private String finalAnswer, inputText, outputText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mm") && outputText.equals("cm")){
@@ -49,7 +50,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 10;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mm") && outputText.equals("m")){
@@ -57,7 +59,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mm") && outputText.equals("km")){
@@ -65,7 +68,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1000000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mm") && outputText.equals("in")){
@@ -73,7 +77,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 25.4;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mm") && outputText.equals("ft")){
@@ -81,7 +86,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 304.8;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mm") && outputText.equals("mi")){
@@ -89,7 +95,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1609000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
 
@@ -101,7 +108,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 10;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("cm") && outputText.equals("cm")){
@@ -109,7 +117,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("cm") && outputText.equals("m")){
@@ -117,7 +126,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 100;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("cm") && outputText.equals("km")){
@@ -125,7 +135,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 10000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("cm") && outputText.equals("in")){
@@ -133,7 +144,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 2.54;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("cm") && outputText.equals("ft")){
@@ -141,7 +153,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 30.48;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("cm") && outputText.equals("mi")){
@@ -149,7 +162,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 160900;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
 
@@ -161,7 +175,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 1000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("m") && outputText.equals("cm")){
@@ -169,7 +184,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 100;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("m") && outputText.equals("m")){
@@ -177,7 +193,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("m") && outputText.equals("km")){
@@ -185,7 +202,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("m") && outputText.equals("in")){
@@ -193,7 +211,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 39.37;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("m") && outputText.equals("ft")){
@@ -201,7 +220,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 3.281;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("m") && outputText.equals("mi")){
@@ -209,7 +229,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1609;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
 
@@ -221,7 +242,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 1000000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("km") && outputText.equals("cm")){
@@ -229,7 +251,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 100000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("km") && outputText.equals("m")){
@@ -237,7 +260,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 1000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("km") && outputText.equals("km")){
@@ -245,7 +269,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("km") && outputText.equals("in")){
@@ -253,7 +278,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 39370;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("km") && outputText.equals("ft")){
@@ -261,7 +287,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 3280.84;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("km") && outputText.equals("mi")){
@@ -269,7 +296,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1.609;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
 
@@ -281,7 +309,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("in") && outputText.equals("ft")){
@@ -289,7 +318,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 12;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("in") && outputText.equals("mi")){
@@ -297,7 +327,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 63360;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("in") && outputText.equals("mm")){
@@ -305,7 +336,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 25.4;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("in") && outputText.equals("cm")){
@@ -313,7 +345,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 2.54;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("in") && outputText.equals("m")){
@@ -321,7 +354,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 39.37;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("in") && outputText.equals("km")){
@@ -329,7 +363,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 39370;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         // in done
@@ -339,7 +374,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 12;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("ft") && outputText.equals("ft")){
@@ -347,7 +383,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("ft") && outputText.equals("mi")){
@@ -355,7 +392,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 5280;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("ft") && outputText.equals("mm")){
@@ -363,7 +401,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 305;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("ft") && outputText.equals("cm")){
@@ -371,7 +410,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 30.48;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("ft") && outputText.equals("m")){
@@ -379,7 +419,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 3.281;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("ft") && outputText.equals("km")){
@@ -387,7 +428,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 3281;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         // ft done
@@ -397,7 +439,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 63360;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("ft")){
@@ -405,7 +448,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 5280;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("mi")){
@@ -413,7 +457,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("mm")){
@@ -421,7 +466,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 1609000;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("cm")){
@@ -429,7 +475,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input * 160934;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("m")){
@@ -437,7 +484,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1609;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("km")){
@@ -445,7 +493,8 @@ public class lengthConvertor extends AppCompatActivity {
             input = Double.parseDouble(inputT);
             output = input / 1.609;
             String outputString = new Double(output).toString();
-            outputResult.setText(outputString);
+            finalAnswer = String.format("%.3f", outputString);
+            outputResult.setText(finalAnswer);
         }
     }
 
