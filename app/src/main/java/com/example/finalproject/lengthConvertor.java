@@ -3,6 +3,7 @@ package com.example.finalproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.icu.text.DecimalFormat;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -40,8 +41,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -49,8 +49,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 10;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -58,8 +57,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 1000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -67,8 +65,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 1000000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -76,8 +73,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 25.4;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -85,8 +81,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 304.8;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -94,8 +89,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 1609000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -107,8 +101,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 10;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -116,8 +109,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -125,8 +117,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 100;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -134,8 +125,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 10000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -143,8 +133,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 2.54;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -152,8 +141,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 30.48;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -161,8 +149,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 160900;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -174,17 +161,15 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 1000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("m") && outputText.equals("cm")){
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
-            output = input / 100;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            output = input * 100;
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -192,8 +177,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -201,8 +185,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 1000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -210,8 +193,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 39.37;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -219,8 +201,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 3.281;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -228,8 +209,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 1609;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -241,8 +221,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 1000000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -250,8 +229,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 100000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -259,8 +237,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 1000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -268,8 +245,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -277,8 +253,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 39370;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -286,8 +261,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 3280.84;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -295,8 +269,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 1.609;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -308,8 +281,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -317,8 +289,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 12;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -326,8 +297,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 63360;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -335,8 +305,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 25.4;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -344,8 +313,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 2.54;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -353,8 +321,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 39.37;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -362,8 +329,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 39370;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -373,8 +339,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 12;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -382,8 +347,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -391,8 +355,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 5280;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -400,8 +363,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 305;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -409,8 +371,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 30.48;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -418,8 +379,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 3.281;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -427,8 +387,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input / 3281;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -438,8 +397,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 63360;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -447,8 +405,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 5280;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -456,8 +413,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -465,8 +421,7 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 1609000;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
@@ -474,26 +429,23 @@ public class lengthConvertor extends AppCompatActivity {
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
             output = input * 160934;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("m")){
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
-            output = input / 1609;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            output = input * 1609;
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
 
         else if(inputText.equals("mi") && outputText.equals("km")){
             String inputT = inputNumber.getText().toString();
             input = Double.parseDouble(inputT);
-            output = input / 1.609;
-            String outputString = new Double(output).toString();
-            finalAnswer = String.format("%.3f", outputString);
+            output = input * 1.609;
+            finalAnswer = String.format("%6.3e", output);
             outputResult.setText(finalAnswer);
         }
     }
