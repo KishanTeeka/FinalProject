@@ -23,8 +23,6 @@
     <string name="radian">Radian</string>
     <string name="pi">π</string>
 
-        <string name="length_prompt">Choose a unit of measure</string>
-
         <string-array name="length_arrays">
             <item>Choose a unit of measure</item>
             <item>mm</item>
@@ -38,7 +36,7 @@
 
     <string-array name="length_arrays2">
         <item>Choose a unit of measure</item>
-        <item>mm</item>
+        <item>m</item>
         <item>cm</item>
         <item>m</item>
         <item>km</item>
@@ -61,6 +59,26 @@
         <item>Fahrenheit</item>
         <item>Kelvin</item>
         <item>Rankine</item>
+    </string-array>
+
+    <string-array name="volumeArray">
+        <item>Choose a unit of measure</item>
+        <item>ml</item>
+        <item>liter</item>
+        <item>cup</item>
+        <item>pint</item>
+        <item>quart</item>
+        <item>gallon</item>
+    </string-array>
+
+    <string-array name="volumeArray2">
+        <item>Choose a unit of measure</item>
+        <item>ml</item>
+        <item>liter</item>
+        <item>cup</item>
+        <item>pint</item>
+        <item>quart</item>
+        <item>gallon</item>
     </string-array>
 
 

@@ -19,4 +19,97 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="319dp"
+        android:layout_height="70dp"
+        android:text="Volume Converter"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <EditText
+        android:id="@+id/inputET"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="Input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <EditText
+        android:id="@+id/outputET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Output"
+        android:focusable="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:entries="@array/volumeArray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="153dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168"
+        app:srcCompat="@drawable/rulericon" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:entries="@array/volumeArray2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="convert"
+        android:text="convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
 </androidx.constraintlayout.widget.ConstraintLayout>
