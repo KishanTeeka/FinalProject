@@ -44,8 +44,15 @@ public class scientificCalculator extends AppCompatActivity {
         double num2 = Double.parseDouble(input2.getText().toString());
 
         double sum = num1 + num2;
-        finalAnswer = String.format("%.3f", sum);
-        result.setText(finalAnswer);
+        finalAnswer = sum + "";
+
+        if(finalAnswer.length() < 8){
+            result.setText(finalAnswer);
+        }
+        else{
+            finalAnswer = String.format("%6.3e", sum);
+            result.setText(finalAnswer);
+        }
         previousAnswer = sum;
     }
 
@@ -57,9 +64,17 @@ public class scientificCalculator extends AppCompatActivity {
         double num2 = Double.parseDouble(input2.getText().toString());
 
         double diff = num1 - num2;
-        finalAnswer = String.format("%.3f", diff);
-        result.setText(finalAnswer);
+        finalAnswer = diff + "";
+
+        if(finalAnswer.length() < 8){
+            result.setText(finalAnswer);
+        }
+        else{
+            finalAnswer = String.format("%6.3e", diff);
+            result.setText(finalAnswer);
+        }
         previousAnswer = diff;
+
     }
 
     public void multiply(View v) {
@@ -70,8 +85,15 @@ public class scientificCalculator extends AppCompatActivity {
         double num2 = Double.parseDouble(input2.getText().toString());
 
         double prod = num1 * num2;
-        finalAnswer = String.format("%.3f", prod);
-        result.setText(finalAnswer);
+        finalAnswer = prod + "";
+
+        if(finalAnswer.length() < 8){
+            result.setText(finalAnswer);
+        }
+        else{
+            finalAnswer = String.format("%6.3e", prod);
+            result.setText(finalAnswer);
+        }
         previousAnswer = prod;
     }
 
@@ -83,8 +105,15 @@ public class scientificCalculator extends AppCompatActivity {
         double num2 = Double.parseDouble(input2.getText().toString());
 
         double quo = num1 % num2;
-        finalAnswer = String.format("%.3f", quo);
-        result.setText(finalAnswer);
+        finalAnswer = quo + "";
+
+        if(finalAnswer.length() < 8){
+            result.setText(finalAnswer);
+        }
+        else{
+            finalAnswer = String.format("%6.3e", quo);
+            result.setText(finalAnswer);
+        }
         previousAnswer = quo;
     }
 
@@ -96,8 +125,15 @@ public class scientificCalculator extends AppCompatActivity {
         double num2 = Double.parseDouble(input2.getText().toString());
 
         double prod = Math.pow(num1, num2);
-        finalAnswer = String.format("%.3f", prod);
-        result.setText(finalAnswer);
+        finalAnswer = prod + "";
+
+        if(finalAnswer.length() < 8){
+            result.setText(finalAnswer);
+        }
+        else{
+            finalAnswer = String.format("%6.3e", prod);
+            result.setText(finalAnswer);
+        }
         previousAnswer = prod;
     }
 
@@ -113,8 +149,15 @@ public class scientificCalculator extends AppCompatActivity {
         }
         else {
             double quo = num1 / num2;
-            finalAnswer = String.format("%.3f", quo);
-            result.setText(finalAnswer);
+            finalAnswer = quo + "";
+
+            if(finalAnswer.length() < 8){
+                result.setText(finalAnswer);
+            }
+            else{
+                finalAnswer = String.format("%6.3e", quo);
+                result.setText(finalAnswer);
+            }
             previousAnswer = quo;
         }
 
@@ -160,20 +203,41 @@ public class scientificCalculator extends AppCompatActivity {
 
             if(answer == -0) {
                 answer = 0;
-                finalAnswer = String.format("%.6f", answer);
-                result.setText(finalAnswer);
+                finalAnswer = answer + "";
+
+                if(finalAnswer.length() < 8){
+                    result.setText(finalAnswer);
+                }
+                else{
+                    finalAnswer = String.format("%6.3e", answer);
+                    result.setText(finalAnswer);
+                }
                 previousAnswer = answer;
             }
             else{
-                finalAnswer = String.format("%.6f", answer);
-                result.setText(finalAnswer);
+                finalAnswer = answer + "";
+
+                if(finalAnswer.length() < 8){
+                    result.setText(finalAnswer);
+                }
+                else{
+                    finalAnswer = String.format("%6.3e", answer);
+                    result.setText(finalAnswer);
+                }
                 previousAnswer = answer;
             }
         }
         else{
             answer = Math.sin(degrees);
-            finalAnswer = String.format("%.3f", answer);
-            result.setText(finalAnswer);
+            finalAnswer = answer + "";
+
+            if(finalAnswer.length() < 8){
+                result.setText(finalAnswer);
+            }
+            else{
+                finalAnswer = String.format("%6.3e", answer);
+                result.setText(finalAnswer);
+            }
             previousAnswer = answer;
         }
         return finalAnswer;
@@ -190,20 +254,41 @@ public class scientificCalculator extends AppCompatActivity {
 
             if(answer == -0) {
                 answer = 0;
-                finalAnswer = String.format("%.6f", answer);
-                result.setText(finalAnswer);
+                finalAnswer = answer + "";
+
+                if(finalAnswer.length() < 8){
+                    result.setText(finalAnswer);
+                }
+                else{
+                    finalAnswer = String.format("%6.3e", answer);
+                    result.setText(finalAnswer);
+                }
                 previousAnswer = answer;
             }
             else{
-                finalAnswer = String.format("%.6f", answer);
-                result.setText(finalAnswer);
+                finalAnswer = answer + "";
+
+                if(finalAnswer.length() < 8){
+                    result.setText(finalAnswer);
+                }
+                else{
+                    finalAnswer = String.format("%6.3e", answer);
+                    result.setText(finalAnswer);
+                }
                 previousAnswer = answer;
             }
         }
         else{
             answer = Math.cos(degrees);
-            finalAnswer = String.format("%.6f", answer);
-            result.setText(finalAnswer);
+            finalAnswer = answer + "";
+
+            if(finalAnswer.length() < 8){
+                result.setText(finalAnswer);
+            }
+            else{
+                finalAnswer = String.format("%6.3e", answer);
+                result.setText(finalAnswer);
+            }
             previousAnswer = answer;
         }
         return finalAnswer;
@@ -220,20 +305,41 @@ public class scientificCalculator extends AppCompatActivity {
 
             if(answer == -0) {
                 answer = 0;
-                finalAnswer = String.format("%.6f", answer);
-                result.setText(finalAnswer);
+                finalAnswer = answer + "";
+
+                if(finalAnswer.length() < 8){
+                    result.setText(finalAnswer);
+                }
+                else{
+                    finalAnswer = String.format("%6.3e", answer);
+                    result.setText(finalAnswer);
+                }
                 previousAnswer = answer;
             }
             else{
-                finalAnswer = String.format("%.6f", answer);
-                result.setText(finalAnswer);
+                finalAnswer = answer + "";
+
+                if(finalAnswer.length() < 8){
+                    result.setText(finalAnswer);
+                }
+                else{
+                    finalAnswer = String.format("%6.3e", answer);
+                    result.setText(finalAnswer);
+                }
                 previousAnswer = answer;
             }
         }
         else{
             answer = Math.tan(degrees);
-            finalAnswer = String.format("%.6f", answer);
-            result.setText(finalAnswer);
+            finalAnswer = answer + "";
+
+            if(finalAnswer.length() < 8){
+                result.setText(finalAnswer);
+            }
+            else{
+                finalAnswer = String.format("%6.3e", answer);
+                result.setText(finalAnswer);
+            }
             previousAnswer = answer;
         }
         return finalAnswer;
