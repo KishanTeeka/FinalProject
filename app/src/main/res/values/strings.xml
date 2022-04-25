@@ -81,5 +81,25 @@
         <item>gallon</item>
     </string-array>
 
+    <string-array name="weight_arrays">
+        <item>Choose a unit of measure</item>
+        <item>oz</item>
+        <item>lb</item>
+        <item>US ton</item>
+        <item>mg</item>
+        <item>g</item>
+        <item>kg</item>
+    </string-array>
+
+    <string-array name="weight_arrays2">
+        <item>Choose a unit of measure</item>
+        <item>oz</item>
+        <item>lb</item>
+        <item>US ton</item>
+        <item>mg</item>
+        <item>g</item>
+        <item>kg</item>
+    </string-array>
+
 
 </resources>

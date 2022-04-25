@@ -775,6 +775,7 @@ public class lengthConvertor extends AppCompatActivity {
                 finalAnswer = String.format("%6.3e", output);
                 outputResult.setText(finalAnswer);
             }
+
         }
 
         else if(inputText.equals("mi") && outputText.equals("km")){
