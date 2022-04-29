@@ -1,22 +1,10 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ap="http://schemas.android.com/apk/res-auto"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/tools"
     android:orientation="horizontal"
     app:ignore="NamespaceTypo">
-
-<com.androidplot.xy.XYPlot
-    style="@style/APDefacto.Dark"
-    android:id="@+id/plot"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    ap:title="A Simple XY Plot"
-    ap:rangeTitle="range"
-    ap:domainTitle="domain"
-    ap:lineLabels="left|bottom"
-    ap:lineLabelRotationBottom="-45"
-    app:ignore="MissingClass" />
 
     <Button
         android:id="@+id/home"
@@ -30,4 +18,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
