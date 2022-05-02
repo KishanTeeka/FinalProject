@@ -23,16 +23,16 @@
     <string name="radian">Radian</string>
     <string name="pi">π</string>
 
-        <string-array name="length_arrays">
-            <item>Choose a unit of measure</item>
-            <item>mm</item>
-            <item>cm</item>
-            <item>m</item>
-            <item>km</item>
-            <item>in</item>
-            <item>ft</item>
-            <item>mi</item>
-        </string-array>
+    <string-array name="length_arrays">
+        <item>Choose a unit of measure</item>
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>in</item>
+        <item>ft</item>
+        <item>mi</item>
+    </string-array>
 
     <string-array name="length_arrays2">
         <item>Choose a unit of measure</item>

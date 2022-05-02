@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bTextEdit" type="id" />
+    <item name="cTextView" type="id" />
+    <item name="cTextEdit" type="id" />
+    <item name="eTextEdit" type="id" />
+    <item name="eTextView" type="id" />
+    <item name="dTextEdit" type="id" />
+    <item name="degreesTextView" type="id" />
+    <item name="aTextView" type="id" />
+    <item name="aTextEdit" type="id" />
+    <item name="dTextView" type="id" />
+    <item name="bTextView" type="id" />
+    <item name="baseEquationTextView" type="id" />
+    <item name="degreeSeekBar" type="id" />
+    <item name="fTextView" type="id" />
+    <item name="fTextEdit" type="id" />
+    <item name="cancelBtn" type="id" />
+    <item name="submitBtn" type="id" />
+    <item name="degreeTextEdit" type="id" />
+</resources>

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
         <activity
+            android:name=".GraphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BoundDialog"
+            android:exported="false" />
+        <activity
+            android:name=".Equation"
+            android:exported="false" />
+        <activity
+            android:name=".EquationActivity"
+            android:exported="false" />
+        <activity
             android:name=".graphingCalculator"
             android:exported="false" />
         <activity

@@ -6,16 +6,19 @@
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/drawable/gradient_drawable_darkmode.xml" value="0.338" />
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/drawable/gradient_drawable_lightmode.xml" value="0.338" />
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_conversion_home.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_graphing_calculator.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_length_convertor.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_scientific_calculator.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_temp_convertor.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_volume_convertor.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/teeka3964/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_weight_convertor.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/drawable/button_bg_round.xml" value="0.2585" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/drawable/gradient_drawable_darkmode.xml" value="0.3675" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/drawable/gradient_drawable_lightmode.xml" value="0.3675" />
+        <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_bound_dialog.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_conversion_home.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_equation.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_equation2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_graph.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_graphing_calculator.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_length_convertor.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.36102564102564105" />
@@ -24,6 +27,7 @@
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_volume_convertor.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/activity_weight_convertor.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/conversion_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zhang1035/Documents/GitHub/FinalProject/app/src/main/res/layout/equations_listview_details.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/activity_scientific_calculator.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_weight_convertor.xml" value="0.3098958333333333" />
       </map>
