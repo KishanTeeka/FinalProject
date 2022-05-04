@@ -7,9 +7,9 @@
         android:id="@+id/xBoundsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="± X Bounds: "
         android:paddingTop="15sp"
         android:paddingBottom="5sp"
+        android:text="± X Bounds: "
         android:textSize="20sp" />
 
     <TextView

@@ -10,13 +10,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import yuku.ambilwarna.AmbilWarnaDialog;
-
 public class EquationActivity extends AppCompatActivity {
 
     private TextView[][] equationViews;
     private double[] coefficients = new double[6];
-    private Button changeColorBtn;
     private int graphColor = Color.rgb(234, 30, 99);
     private Button cancelBtn;
     private Button submitBtn;
@@ -85,46 +82,8 @@ public class EquationActivity extends AppCompatActivity {
             }
         });
 
-        changeColorBtn = findViewById(R.id.colorChangeBtn);
-        changeColorBtn.setBackgroundColor(graphColor);
-        changeColorBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openColorPicker();
-            }
-        });
-
     }
 
-    private void openColorPicker(){
-        final AmbilWarnaDialog colorPicker = new AmbilWarnaDialog(this, graphColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
-            public void onCancel(AmbilWarnaDialog dialog) {
-
-            }
-
-            public void onOk(AmbilWarnaDialog dialog, int color) {
-                graphColor = color;
-                changeColorBtn.setBackgroundColor(color);
-                submitBtn.setBackgroundColor(graphColor);
-                cancelBtn.setBackgroundColor(graphColor);
-
-                int red = Color.red(graphColor);
-                int blue = Color.blue(graphColor);
-                int green = Color.green(graphColor);
-
-                if ((red*0.299 + green*0.587 + blue*0.114) > 150){
-                    submitBtn.setTextColor(Color.BLACK);
-                    cancelBtn.setTextColor(Color.BLACK);
-                }
-                else{
-                    submitBtn.setTextColor(Color.WHITE);
-                    cancelBtn.setTextColor(Color.WHITE);
-                }
-
-            }
-        });
-        colorPicker.show();
-    }
 
     private void setCoefficients(){
         for (int i = coefficients.length - 1; i >= 0; i--){

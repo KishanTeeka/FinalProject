@@ -7,19 +7,6 @@
     android:screenOrientation="portrait"
     tools:context=".EquationActivity">
 
-    <Button
-        android:id="@+id/colorChangeBtn"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:background="#E91E63"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <TextView
         android:id="@+id/bTextView"

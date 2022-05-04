@@ -44,9 +44,6 @@ public class EquationItemAdapter extends ArrayAdapter<Equation> {
         convertView = inflater.inflate(resource, parent, false);
 
         TextView equationTextView = convertView.findViewById(R.id.equationTextView);
-        Button changeColorButton = convertView.findViewById(R.id.colorChangeBtn);
-
-        changeColorButton.setBackgroundColor(color);
         equationTextView.setText(equation);
 
         CheckBox visibilityCheck = convertView.findViewById(R.id.visibilityCheck);
