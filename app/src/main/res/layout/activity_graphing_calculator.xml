@@ -5,73 +5,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="portrait"
-    android:background="@drawable/gradient_drawable_lightmode"
+    android:background="@color/backgroundColor"
     tools:context=".graphingCalculator">
 
     <Button
         android:id="@+id/setBoundsBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/addEquationBtn"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="30dp"
-        android:text="Set Bounds" />
+        android:layout_marginStart="125dp"
+        android:layout_marginVertical="140dp"
+        android:text="@string/set_bounds" />
 
     <Button
         android:id="@+id/addEquationBtn"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/generateGraphsBtn"
-        android:layout_alignParentRight="true"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
         android:clickable="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginVertical="485dp"
         android:padding="10dp"
-        android:text="Add Equation" />
+        android:text="@string/add_equation"
+        android:focusable="true" />
 
     <Button
         android:id="@+id/generateGraphsBtn"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginVertical="67dp"
         android:clickable="true"
-        android:text="Generate Graphs" />
+        android:text="@string/generate_graphs"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/xDomainTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/yDomainTextView"
-        android:textSize="30dp"
-        android:paddingLeft="16dp"
-        android:text="x: [-10, 10]" />
+        android:layout_marginStart="125dp"
+        android:layout_marginVertical="280dp"
+        android:textSize="30sp"
+        android:paddingStart="16dp"
+        android:paddingBottom="5dp"
+        android:text="@string/x_10_10" />
 
     <TextView
         android:id="@+id/yDomainTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/setBoundsBtn"
-        android:textSize="30dp"
-        android:paddingLeft="16dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginVertical="330dp"
+        android:textSize="30sp"
+        android:paddingStart="16dp"
         android:paddingBottom="5dp"
-        android:text="y: [-10, 10]" />
+        android:text="@string/y_10_10" />
 
     <Button
         android:id="@+id/home"
         android:layout_width="75dp"
         android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:background="@drawable/homeicon"
-        android:paddingLeft="76dp"
-        android:onClick="homePage"
-        android:layout_above="@id/addEquationBtn"/>
+        android:paddingEnd="76dp"
+        android:onClick="homePage" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginVertical="90dp"
+        android:layout_marginStart="125dp"
+        app:srcCompat="@drawable/graphingcalculatoricon"
+        android:contentDescription="@string/graphing_calc_icon" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="319dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginVertical="30dp"
+        android:text="Graphing Calculator"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
     <ListView
         android:id="@+id/equationListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
         tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="138dp">
-
-    </ListView>
+        tools:layout_editor_absoluteY="138dp"></ListView>
 </RelativeLayout>

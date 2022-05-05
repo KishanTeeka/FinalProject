@@ -22,6 +22,12 @@
     <string name="degree">Degree</string>
     <string name="radian">Radian</string>
     <string name="pi">π</string>
+    <string name="generate_graphs">Generate Graphs</string>
+    <string name="add_equation">Add Equation</string>
+    <string name="set_bounds">Set Bounds</string>
+    <string name="y_10_10">y: [-10, 10]</string>
+    <string name="x_10_10">x: [-10, 10]</string>
+    <string name="graphing_calc_icon">graphing calc icon</string>
 
     <string-array name="length_arrays">
         <item>Choose a unit of measure</item>
