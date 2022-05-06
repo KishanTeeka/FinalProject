@@ -100,4 +100,6 @@ public class Equation implements Parcelable {
         parcel.writeInt(degrees);
         parcel.writeInt(graphColor);
     }
+
+
 }

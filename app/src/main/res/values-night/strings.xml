@@ -25,7 +25,7 @@
 
 
     <string-array name="length_arrays">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>mm</item>
         <item>cm</item>
         <item>m</item>
@@ -36,7 +36,7 @@
     </string-array>
 
     <string-array name="length_arrays2">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>m</item>
         <item>cm</item>
         <item>m</item>
@@ -47,7 +47,7 @@
     </string-array>
 
     <string-array name="temperatureArray">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>Celsius</item>
         <item>Fahrenheit</item>
         <item>Kelvin</item>
@@ -55,7 +55,7 @@
     </string-array>
 
     <string-array name="temperatureArray2">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>Celsius</item>
         <item>Fahrenheit</item>
         <item>Kelvin</item>
@@ -63,7 +63,7 @@
     </string-array>
 
     <string-array name="volumeArray">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>ml</item>
         <item>liter</item>
         <item>cup</item>
@@ -73,7 +73,7 @@
     </string-array>
 
     <string-array name="volumeArray2">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>ml</item>
         <item>liter</item>
         <item>cup</item>
@@ -83,7 +83,7 @@
     </string-array>
 
     <string-array name="weight_arrays">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>oz</item>
         <item>lb</item>
         <item>US ton</item>
@@ -93,7 +93,7 @@
     </string-array>
 
     <string-array name="weight_arrays2">
-        <item>Choose a unit of measure</item>
+        <item>Choose a unit</item>
         <item>oz</item>
         <item>lb</item>
         <item>US ton</item>

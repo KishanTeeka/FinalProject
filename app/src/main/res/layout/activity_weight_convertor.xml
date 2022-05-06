@@ -42,14 +42,14 @@
         android:layout_height="48dp"
         android:ems="10"
         android:gravity="center"
-        android:inputType="number"
         android:hint="Input"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.473" />
 
     <EditText
         android:id="@+id/outputET"
@@ -61,22 +61,34 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.592" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="162dp"
+        android:layout_height="32dp"
+        android:entries="@array/weight_arrays2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595" />
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="125dp"
-        android:layout_height="25dp"
+        android:layout_width="162dp"
+        android:layout_height="29dp"
         android:entries="@array/weight_arrays"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465" />
+        app:layout_constraintVertical_bias="0.475" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -89,18 +101,6 @@
         app:layout_constraintVertical_bias="0.168"
         app:srcCompat="@drawable/weighticon" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="125dp"
-        android:layout_height="25dp"
-        android:entries="@array/weight_arrays2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
-
     <Button
         android:id="@+id/convert"
         android:layout_width="wrap_content"
@@ -112,6 +112,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646" />
+        app:layout_constraintVertical_bias="0.745" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
