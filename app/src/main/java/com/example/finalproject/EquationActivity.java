@@ -58,7 +58,6 @@ public class EquationActivity extends AppCompatActivity {
         });
 
         cancelBtn = findViewById(R.id.cancelBtn);
-        cancelBtn.setBackgroundColor(graphColor);
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,7 +66,6 @@ public class EquationActivity extends AppCompatActivity {
         });
 
         submitBtn = findViewById(R.id.submitBtn);
-        submitBtn.setBackgroundColor(graphColor);
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
