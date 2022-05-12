@@ -14,7 +14,7 @@ public class EquationActivity extends AppCompatActivity {
 
     private TextView[][] equationViews;
     private double[] coefficients = new double[6];
-    private int graphColor = Color.rgb(234, 30, 99);
+    private int graphColor = Color.rgb(255, 0, 0);
     private Button cancelBtn;
     private Button submitBtn;
     private int degrees = 1;
