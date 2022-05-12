@@ -16,7 +16,7 @@ public class GraphActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         canvas = new MyCanvas(this);
-        canvas.setBackgroundColor(Color.rgb(57,180,142));
+        canvas.setBackgroundColor(Color.rgb(255,0,0));
         canvas.setEquations(getIntent().<Equation>getParcelableArrayListExtra("equations"));
         canvas.setVisibilities(getIntent().getBooleanArrayExtra("visibilities"));
         canvas.setNums(getIntent().getIntExtra("xNum", 10), getIntent().getIntExtra("yNum", 10));
